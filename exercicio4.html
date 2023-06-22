@@ -1,0 +1,77 @@
+<!-- 
+    Nesse exercicio você deverá criar a parte de HTML com locais onde o usuario deve colocar o nome, o ano que nasceu, e se ja fez aniversario,
+    depois deverá apresentar na tela uma mensagem com o nome da pessoa e a idade exata da pessoa. 
+ -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2 - SWitch</title>
+
+    <style>
+        .container {
+            margin: 0 auto;
+            width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            Exercicio 4
+        </h1>
+        <h4>ALUNO 1: Isabella Simões Santos</h4>
+        <h4>ALUNO 2 : Ana Beatriz dos Santos Verissismo</h4>
+        <!-- <center>
+            <form>
+                <label>Digite seu nome</label>
+                <input type="text" id="nome"><br>
+                <label> Digite o ano em que você nasceu</label>
+                <input type="date" id="ano"><br>
+                <label>Você ja fez aniversario?</label>
+                <input type="text" id="aniver"><br>
+                <button onclick="user ()">Clique aqui!</button>
+            </form>
+            <div id = "res"></div>
+        </center>
+
+        <script>
+            function user(){
+                let name = document.getElementById("nome").value
+                let data = document.getElementById("ano").value
+                let ani = document.getElementById("aniver").value
+                let res = 2023 - data
+                if( res == ){
+                    nao consiguimos deste jeito
+               
+
+                }
+            }
+        </script> -->
+        <script>
+            var nome = prompt ("Qual seu nome?")
+            var idade = Number (prompt ("Ano em que nasceu"))
+            var alter = prompt ("Você já fez aniversário esse ano?")
+            let res = 2023 - idade
+            // alert (nome + res + alter)
+            if (alter == "não" ){
+                let momi = res -1
+                alert (nome + " " + momi + "anos")
+            }
+            else if (alter == "sim"){
+                alert (nome + " " + res + "anos")
+            }
+            else {
+                alert ("valor inválido :(")
+            }
+        </script>
+
+
+    </div>
+</body>
+
+</html>

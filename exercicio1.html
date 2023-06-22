@@ -1,0 +1,47 @@
+<!-- Nesse exercicio temos uma pagina de HTML e CSS bem simples onde o usuario deverá digitar o seu nome, Você deverá criar um script 
+com uma função que leia o nome desse usuário, e apresente um ALERT contendo o nome dele e uma mensagem dizendo "BOM DIA" 
+ex.: "Bom dia Eduardo" -
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1 - Usando Alerts</title>
+
+    <style>
+        .container {
+            margin: 0 auto;
+            width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            Exercicio 1
+        </h1>
+        <h4>ALUNO 1: Isabella Simões Santos</h4>
+        <h4>ALUNO 2 : Ana Beatriz dos Santos Verissismo</h4>
+
+
+        <label for="">Digite o nome do usuario</label><br>
+        <input type="text" id="nome"><br><br>
+
+        <button onclick="user()">VER ALERTA</button>
+    </div>
+
+    <script>
+        function user(){
+            let nome = document.getElementById("nome").value
+            alert ("Bom dia" + " " + nome)
+        }
+    </script>
+
+
+</body>
+
+</html>

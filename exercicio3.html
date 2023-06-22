@@ -1,0 +1,55 @@
+<!-- 
+    No arquivo abaixo temos um circulo em branco, tem tambem quatro botões neles tem o nome de  quatro cores, seu trabalho será
+    fazer com que quando o usuario clique em um botão, que se altere a cor do circulo de acordo o botao selecionado.
+ -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercicio 2 - SWitch</title>
+    
+        <style>
+            .container{
+                margin: 0 auto;
+                width: 600px;
+            }
+
+            #circulo{
+                width: 250px;
+                height: 250px;
+                border: 1px solid black;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="container">
+        <h1>
+            Exercicio 3
+        </h1>
+        <h4>ALUNO 1: _____________________</h4>
+        <h4>ALUNO 2 : _____________________</h4>
+
+        <div id="circulo">
+
+        </div>
+        <br>
+
+        <button onclick="arcoiris('green')">VERDE</button>
+        <button onclick="arcoiris('red')">VERMELHO</button>
+        <button onclick="arcoiris('blue')">AZUL</button>
+        <button onclick="arcoiris('pink')">ROSA</button>
+
+        <script>
+            function arcoiris(cores){
+                let circulo = document.getElementById("circulo")
+                circulo.style.backgroundColor = cores
+            }
+        </script>
+
+    
+    </div>
+    </body>
+    </html>

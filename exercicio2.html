@@ -1,0 +1,81 @@
+<!-- Uma concessionária vende 5 tipos de carros, crie um programa em que o cliente possa digitar, ou clicar o nome do carro ou seu botao correspondente,
+e apareça o valor na tela, segundo a tabela abaixo. Utilizando SWITCH CASE e sem utilizar ALERTS
+        Gol - R$ 78.160,00 
+        Saveiro - R$ 90.250,00
+        Toro - R$ 208.590,00
+        Vitara - R$ 162.990,00
+        Corolla - R$ 148.990,00
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2 - SWitch</title>
+
+    <style>
+        .container{
+            margin: 0 auto;
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>
+        Exercicio 2
+    </h1>
+    <h4>ALUNO 1: Isabella Simões Santos</h4>
+    <h4>ALUNO 2 : Ana Beatriz dos Santos</h4>
+    <center>
+        <h1>Concessionária Anabella</h1>
+        <ul>
+            <li>Gol  </li>
+                <li>Saveiro </li>
+                <li>Toro </li>
+                <li>Vitara </li>
+                <li>Corolla </li>
+        </ul>
+        <label>Para acessar o valor, escolha um modelo de carro</label><br>
+        <input type="text" id="name">
+        <button onclick="carro()"> Clique aqui </button>
+        <p id="res"></p>
+
+        <script>
+            function carro(){
+                let car = document.getElementById("name").value
+                let res = document.getElementById("res")
+
+                switch (car){
+                    case "gol":
+                        res.innerHTML = "O preço do carro Gol é R$ 78.160,00 "
+                        break
+                        case "saveiro":
+                        res.innerHTML = "O preço do carro Saveiro é R$ 90.250,00 "
+                        break
+                        case "touro":
+                        res.innerHTML = "O preço do carro Toro éR$ 208.590,00"
+                        break
+                        case "vitara":
+                        res.innerHTML = "O preço do carro Vitara é R$ 162.990,00"
+                        break
+                        case "corolla":
+                        res.innerHTML = "O preço do carro  Corolla é R$ 148.990,00"
+                        break
+                        default:
+                        res.innerHTML = "valor inválido :("
+
+                }
+            }
+
+
+        </script>
+        
+
+
+    </center>
+
+</div>
+</body>
+</html>

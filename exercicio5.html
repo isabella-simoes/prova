@@ -1,0 +1,57 @@
+<!-- O codigo abaixo contem dois erros que não esta permitindo o funcionamento do programa, veja o que está de errado 
+e corrija o script -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+
+    <style>
+        .container {
+            margin: 0 auto;
+            width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            Exercicio 5
+        </h1>
+        <h4>ALUNO 1: Isabella Simões Santos</h4>
+        <h4>ALUNO 2 : Ana Beatriz dos Santos Verissimos</h4>
+
+        <select name="" id="turno">
+            <option value="m">Matutino</option>
+            <option value="v">Vespertino</option>
+            <option value="n">Noturno</option>
+        </select>
+        <button onclick="turno()">VER MENSAGEM</button>
+
+    </div>
+
+    <script>
+        function turno() {
+            const turno = document.getElementById("turno")
+            const selecao = turno.options[turno.selectedIndex].value
+
+            if (selecao == "m") {
+                alert("bom dia")
+            }
+            if (selecao == "v") {
+                alert("Boa Tarde")
+            }
+            if (selecao == "n") {
+                alert("Boa noite")
+            }
+        }
+
+    </script>
+</body>
+
+</html>
